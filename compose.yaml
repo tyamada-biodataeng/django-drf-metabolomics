@@ -15,7 +15,7 @@ services:
       - postgres-drf-nginx-network
   drf:
     platform: linux/x86_64
-    image: biobr131/django-drf
+    image: tyamadabiodataeng/django-drf
     container_name: drf
     build:
       context: ./app
@@ -39,7 +39,7 @@ services:
       - postgres-drf-nginx-network
   nginx:
     platform: linux/x86_64
-    image: biobr131/django-drf-nginx
+    image: tyamadabiodataeng/django-drf-nginx
     container_name: nginx
     build: ./nginx
     volumes:
