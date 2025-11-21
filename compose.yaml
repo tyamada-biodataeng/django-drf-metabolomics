@@ -1,6 +1,5 @@
 services:
   postgres:
-    platform: linux/x86_64
     image: postgres:17
     container_name: postgres
     environment:
@@ -14,7 +13,6 @@ services:
     networks:
       - postgres-drf-nginx-network
   drf:
-    platform: linux/x86_64
     image: tyamadabiodataeng/django-drf
     container_name: drf
     build:
@@ -38,7 +36,6 @@ services:
     networks:
       - postgres-drf-nginx-network
   nginx:
-    platform: linux/x86_64
     image: tyamadabiodataeng/django-drf-nginx
     container_name: nginx
     build: ./nginx
