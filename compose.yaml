@@ -21,7 +21,7 @@ services:
         DIR_WORK: "/usr/src/app"
         ENV_YML: "environment.yaml"
         VENV: "bioinfo"
-        REQ_DIR: "requirements/"
+        REQ_DIR: "requirements"
         REQ_TXT: "prod.txt"
     command: mamba run --name bioinfo gunicorn config.wsgi.prod:application --bind 0.0.0.0:8000
     volumes:

@@ -1,12 +1,15 @@
+django
 -r common.txt
 black
 ruff
 mypy
 tox
 django-debug-toolbar
+pytest
 pytest-django
 pytest-randomly
 pytest-cov
 factory-boy
 pytest-structlog
 sphinx
+sphinxcontrib-django

@@ -20,10 +20,10 @@ RUN mamba update -y -c conda-forge mamba && \
 
 ARG VENV
 ARG REQ_DIR
-COPY ${REQ_DIR} ./${REQ_DIR}
+COPY ${REQ_DIR}/ ${REQ_DIR}/
 ARG REQ_TXT
 RUN mamba run --name ${VENV} pip install --upgrade pip && \
-    mamba run --name ${VENV} pip install --no-cache-dir -r ${REQ_TXT} && \
+    mamba run --name ${VENV} pip install --no-cache-dir -r ${REQ_DIR}/${REQ_TXT} && \
     mamba clean -i -t -y
 
 USER ubuntu

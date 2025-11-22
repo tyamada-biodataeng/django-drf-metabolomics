@@ -8,7 +8,15 @@ structlog
 pytest-structlog
 line_profiler
 memory_profiler
-pandas[performance, plot, computation, excel]
+numpy
+scipy
+statsmodels
+matplotlib
+openpyxl
+python-dotenv
+psycopg[binary]
+sqlalchemy
+pandas[performance, plot, computation, excel, xml, hdf5]
 polars-lts-cpu
 ibis-framework[pandas, polars]
 statsmodels
@@ -18,19 +26,17 @@ fastcluster
 statannotations
 requests
 scikit-learn
+pydantic
+sqlmodel
+pandera[polars]
 rdkit
 biopython
 bioinfokit
-scanpy
+anndata
+scanpy[leiden]
 jupyterlab
 ipywidgets
 ipympl
 ipytest
 pygwalker
-python-dotenv
-psycopg[binary]
-sqlalchemy
-pydantic
-sqlmodel
-pandera[polars]
 sphinx

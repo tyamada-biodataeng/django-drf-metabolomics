@@ -1,27 +1,31 @@
+structlog
 psycopg[binary]
-django
-djangorestframework
+gunicorn
+uvicorn[standard]
 PyYAML
 uritemplate
 Markdown
 Pygments
-django-guardian
+djangorestframework
+django-auditlog
 django-environ
-gunicorn
-django-structlog
-django-silk
 django-extensions
 django-filter
+django-guardian
 django-import-export[all]
+django-silk
+django-structlog
 drf-spectacular[sidecar]
-django-auditlog
 strawberry-graphql[asgi]
 strawberry-graphql-django
-uvicorn[standard]
+numpy
+scipy
+statsmodels
+matplotlib
+openpyxl
 pandas[performance, plot, computation, excel, xml, hdf5]
 polars-lts-cpu
 ibis-framework[pandas, polars]
-statsmodels
 japanize-matplotlib
 seaborn
 fastcluster
@@ -30,4 +34,5 @@ scikit-learn
 rdkit
 biopython
 bioinfokit
-scanpy
+anndata
+scanpy[leiden]
