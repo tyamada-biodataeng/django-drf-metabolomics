@@ -2,9 +2,10 @@ black
 ruff
 mypy
 tox
+sphinx
+structlog
 pytest
 pytest-snapshot
-structlog
 pytest-structlog
 line_profiler
 memory_profiler
@@ -16,27 +17,26 @@ openpyxl
 python-dotenv
 psycopg[binary]
 sqlalchemy
-pandas[performance, plot, computation, excel, xml, hdf5]
+pandas[performance, plot, computation, excel, hdf5]
 polars-lts-cpu
 ibis-framework[pandas, polars]
-statsmodels
 japanize-matplotlib
 seaborn
 fastcluster
 statannotations
 requests
 scikit-learn
+jupyterlab
+ipywidgets
+ipympl
+ipytest
+pygwalker
 pydantic
 sqlmodel
+sqlacodegen
 pandera[polars]
 rdkit
 biopython
 bioinfokit
 anndata
 scanpy[leiden]
-jupyterlab
-ipywidgets
-ipympl
-ipytest
-pygwalker
-sphinx
